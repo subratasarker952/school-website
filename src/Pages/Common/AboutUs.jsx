@@ -3,6 +3,7 @@ import AboutSection from "../../Components/Shared/AboutSections/AboutSection";
 const AboutUs = () => {
     return (
         <div>
+            <h1 className="text-4xl underline my-5">About</h1>
             <AboutSection title={"History"} subtitle={"Founded in 1985, Springdale Public School has been dedicated to providing quality education and holistic development to students."}/>
             <AboutSection title={"Vision"} subtitle={"To create a learning environment that fosters academic excellence, critical thinking, and ethical values."}/>
             <AboutSection title={"Mission"} subtitle={"To empower students with the knowledge, skills, and values needed to thrive in a dynamic world."}/>

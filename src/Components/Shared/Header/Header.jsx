@@ -37,15 +37,15 @@ const Header = () => {
       <NavLink className={"font-bold p-2 m-2"} to="/contact">
         Contact
       </NavLink>
-      {user && (
+      {/* {user && (
         <NavLink className={"p-2 m-2"} to="/dashboard">
           Dashboard
         </NavLink>
-      )}
+      )} */}
     </>
   );
   return (
-    <div className="sticky top-0 left-0">
+    <div className="sticky z-10 top-0 left-0">
       <div className="navbar bg-base-200 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -75,7 +75,7 @@ const Header = () => {
           <Link to={"/"}>
             <p className="flex justify-center items-center  text-orange-600">
               <img src={logo} alt="" className=" w-12 px-2" />
-              <span> Springdale Public School</span>
+              <span className="text-3xl"> Springdale Public School</span>
             </p>
           </Link>
         </div>
