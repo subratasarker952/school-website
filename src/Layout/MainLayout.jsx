@@ -10,10 +10,12 @@ const MainLayout = () => {
     return <Loading></Loading>;
   }
   return (
-    <div className="flex flex-col min-h-screen justify-between max-w-5xl mx-auto">
+    <div className="flex flex-col min-h-screen justify-between">
       <div>
         <Header />
+        <div className="p-4">
         <Outlet />
+        </div>
       </div>
       <Footer />
     </div>

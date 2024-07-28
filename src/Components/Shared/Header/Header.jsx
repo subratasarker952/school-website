@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import logo from "/logo.png";
 
 const Header = () => {
     const { user, logOutUser } = useAuth()
@@ -12,15 +13,19 @@ const Header = () => {
     }
 
     const menu = <>
-        <NavLink className={'p-2 m-2'} to="/">Home</NavLink>
-        <NavLink className={'p-2 m-2'} to="/about">About</NavLink>
-        <NavLink className={'p-2 m-2'} to="/contact">Contact</NavLink>
-
+        <NavLink className={'font-bold p-2 m-2'} to="/">Home</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/gallery">Gallery</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/students">Students</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/faculty">Faculty</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/admissions">Admissions</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/academics">Academics</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/about">About</NavLink>
+        <NavLink className={'font-bold p-2 m-2'} to="/contact">Contact</NavLink>
         {user && <NavLink className={'p-2 m-2'} to="/dashboard">Dashboard</NavLink>}
     </>
     return (
-        <div>
-            <div className="navbar bg-base-200">
+        <div className="sticky top-0 left-0">
+            <div className="navbar bg-base-200 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,17 +35,19 @@ const Header = () => {
                             {menu}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Logo</a>
+                    <Link to={'/'} className="w-12 ">
+                    <img src={logo} alt="" className="px-2" />
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {menu}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                {/* <div className="navbar-end">
                     {user ? <button onClick={handleLogOutUser} className="btn">LogOut</button> :
                         <button className="btn"><NavLink className={'p-2 m-2'} to="/login">Login</NavLink></button>}
-                </div>
+                </div> */}
             </div>
         </div>
     );
