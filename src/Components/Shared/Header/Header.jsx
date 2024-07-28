@@ -44,10 +44,10 @@ const Header = () => {
                         {menu}
                     </ul>
                 </div>
-                {/* <div className="navbar-end">
+                <div className="navbar-end hidden">
                     {user ? <button onClick={handleLogOutUser} className="btn">LogOut</button> :
                         <button className="btn"><NavLink className={'p-2 m-2'} to="/login">Login</NavLink></button>}
-                </div> */}
+                </div>
             </div>
         </div>
     );
