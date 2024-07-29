@@ -8,11 +8,11 @@ const Faculty = () => {
           <div className="flex flex-col gap-3">
             <p className="ml-10">
               <span className="text-sm font-bold">o</span> <span className='font-bold'>John Doe:</span> Principal, M.Ed, 20 years of
-              experience in educational administration.{" "}
+              experience in educational administration.
             </p>
             <p className="ml-10">
               <span className="text-sm font-bold">o</span> <span className='font-bold'>Jane Smith:</span> Vice Principal, M.Sc. in
-              Physics, 15 years of teaching experience.{" "}
+              Physics, 15 years of teaching experience.
             </p>
             <p className="ml-10">
               <span className="text-sm font-bold">o</span> <span className='font-bold'> Emily Johnson:</span> English Teacher, M.A.
@@ -20,15 +20,15 @@ const Faculty = () => {
             </p>
             <p className="ml-10">
               <span className="text-sm font-bold">o</span> <span className='font-bold'>Michael Brown:</span> Mathematics Teacher,
-              M.Sc. in Mathematics, 8 years of teaching experience.{" "}
+              M.Sc. in Mathematics, 8 years of teaching experience.
             </p>
             <p className="ml-10">
               <span className="text-sm font-bold">o</span> <span className='font-bold'>Sophia Davis:</span> Science Teacher, M.Sc.
-              in Chemistry, 12 years of teaching experience. David{" "}
+              in Chemistry, 12 years of teaching experience. David
             </p>
             <p className="ml-10">
               <span className="text-sm font-bold">o</span> <span className='font-bold'>Wilson:</span> Computer Science Teacher,
-              B.Tech in Computer Science, 5 years of teaching experience.{" "}
+              B.Tech in Computer Science, 5 years of teaching experience.
             </p>
           </div>
         </div>

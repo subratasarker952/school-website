@@ -21,7 +21,7 @@ const ContactUs = () => {
 
             <form className="flex gap-3 flex-col">
                 <input className="p-3 rounded border border-orange-400" type="text" placeholder="Name" name="name" id="name" />
-                <input className="p-3 rounded border border-orange-400" type="text" placeholder="Name" name="email" id="email" />
+                <input className="p-3 rounded border border-orange-400" type="text" placeholder="Email" name="email" id="email" />
                 <textarea className="border border-orange-400" name="message" id="message"></textarea>
                 <button className="btn btn-primary" type="submit">Send</button>
             </form>
