@@ -7,61 +7,46 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-            <p className="mb-4">
+            <p className="mb-2">
               <strong>Address:</strong> Springdale Public School, 123 Education
               Lane, Cityville, State, ZIP Code
             </p>
-            <p className="mb-4">
+            <p className="mb-2">
               <strong>Phone:</strong> +1 (123) 456-7890
             </p>
-            <p className="mb-4">
+            <p className="mb-2">
               <strong>Email:</strong> info@springdale.edu
             </p>
 
             <h3 className="text-2xl font-semibold mb-4">Contact Form</h3>
             <form>
               <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-gray-700 font-semibold mb-2"
-                >
-                  Name
-                </label>
                 <input
+                  placeholder="Name"
                   type="text"
                   id="name"
                   className="w-full p-2 border border-gray-300 rounded"
                 />
               </div>
               <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-gray-700 font-semibold mb-2"
-                >
-                  Email
-                </label>
                 <input
+                  placeholder="Email"
                   type="email"
                   id="email"
                   className="w-full p-2 border border-gray-300 rounded"
                 />
               </div>
               <div className="mb-4">
-                <label
-                  htmlFor="message"
-                  className="block text-gray-700 font-semibold mb-2"
-                >
-                  Message
-                </label>
-                <textarea
+                 <textarea
                   id="message"
+                  placeholder="Type your message"
                   className="w-full p-2 border border-gray-300 rounded"
-                  rows="4"
+                  rows="2"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+                className="bg-blue-500 text-white w-full py-2 px-4 rounded hover:bg-blue-600"
               >
                 Send Message
               </button>
