@@ -1,7 +1,7 @@
 const Academics = () => {
   return (
     <>
-      <h1 className="text-4xl underline my-5">Academics :-</h1>
+      <h1 className="text-4xl text-center underline my-10">Academics</h1>
 
       <div className="max-w-5xl mx-auto text-2xl flex flex-col gap-3">
         <span className="font-bold"> Curriculum: </span>

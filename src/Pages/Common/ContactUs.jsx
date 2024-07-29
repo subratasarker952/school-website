@@ -1,7 +1,7 @@
 const ContactUs = () => {
   return (
     <div>
-      <h1 className="text-4xl underline my-5">Contact Us :-</h1>
+      <h1 className="text-4xl text-center underline my-10">Contact Us</h1>
 
       <div className="text-2xl max-w-xl mx-auto">
         <p>

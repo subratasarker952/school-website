@@ -1,7 +1,7 @@
 const Students = () => {
   return (
     <>
-      <h1 className="text-4xl underline my-5">Students :-</h1>
+      <h1 className="text-4xl text-center underline my-10">Students</h1>
       <div className="max-w-5xl mx-auto text-2xl flex flex-col gap-3">
         <div className="">
           <span className="font-bold">Life at Springdale:- </span>

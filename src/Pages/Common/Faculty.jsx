@@ -1,7 +1,7 @@
 const Faculty = () => {
   return (
     <>
-      <h1 className="text-4xl underline my-5">Faculty :-</h1>
+      <h1 className="text-4xl text-center underline my-10">Faculty</h1>
       <div className="max-w-5xl mx-auto text-2xl flex flex-col gap-3">
         <div className="">
           <span className="font-bold">Profiles:- </span>
