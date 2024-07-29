@@ -1,43 +1,57 @@
 const Admissions = () => {
   return (
-    <>
-      <h1 className="text-4xl text-center underline my-10">Admissions</h1>
-      <div className="max-w-5xl mx-auto text-2xl flex flex-col gap-3">
-        <div className="">
-          <p className="">
-            <span className="font-bold">Process:- </span> Admission forms are
-            available for download. Submit the completed form along with
-            required documents at the school office.
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">Admissions</h2>
+
+        <section className="mb-12">
+          <h3 className="text-2xl font-semibold mb-4">Admission Process</h3>
+          <p className="text-lg leading-relaxed">
+            Admission forms are available for download. Submit the completed
+            form along with required documents at the school office.
           </p>
-          <p className="">
-            <span className="font-bold">Criteria:-</span> :Admission is based on
-            merit and availability of seats. Entrance tests may be conducted for
-            certain grades.
+        </section>
+
+        <section className="mb-12">
+          <h3 className="text-2xl font-semibold mb-4">Admission Criteria</h3>
+          <p className="text-lg leading-relaxed">
+            Admission is based on merit and availability of seats. Entrance
+            tests may be conducted for certain grades.
           </p>
-          <div className="">
-            <span className="font-bold">Important Dates:- </span>
-            <div>
-              <p className="ml-10">
-                <span className="text-sm font-bold">o</span> Admission Form
-                Availability: March 1st
-              </p>
-              <p className="ml-10">
-                <span className="text-sm font-bold">o</span> Last Date for
-                Submission: March 31st
-              </p>
-              <p className="ml-10">
-                <span className="text-sm font-bold">o</span> Entrance Test:
-                April 15th
-              </p>
-              <p className="ml-10">
-                <span className="text-sm font-bold">o</span> Announcement of
-                Results: April 30th
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
+
+        <section className="mb-12">
+          <h3 className="text-2xl font-semibold mb-4">
+            Downloadable Admission Forms
+          </h3>
+          <a
+            href="/path/to/admission-form.pdf"
+            download
+            className="text-blue-500 hover:text-blue-700"
+          >
+            Click here to download the admission form
+          </a>
+        </section>
+
+        <section className="mb-12">
+          <h3 className="text-2xl font-semibold mb-4">Important Dates</h3>
+          <ul className="list-disc list-inside">
+            <li className="text-lg leading-relaxed">
+              Admission Form Availability: March 1st
+            </li>
+            <li className="text-lg leading-relaxed">
+              Last Date for Submission: March 31st
+            </li>
+            <li className="text-lg leading-relaxed">
+              Entrance Test: April 15th
+            </li>
+            <li className="text-lg leading-relaxed">
+              Announcement of Results: April 30th
+            </li>
+          </ul>
+        </section>
       </div>
-    </>
+    </div>
   );
 };
 

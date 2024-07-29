@@ -22,7 +22,7 @@ const Banner = () => {
     >
       <SwiperSlide>
         <div
-          className="hero min-h-[600px]"
+          className="hero min-h-[700px]"
           style={{
             backgroundImage:
               "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
@@ -46,7 +46,7 @@ const Banner = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div
-          className="hero min-h-[600px]"
+          className="hero min-h-[700px]"
           style={{
             backgroundImage:
               "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
@@ -70,7 +70,7 @@ const Banner = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div
-          className="hero min-h-[600px]"
+          className="hero min-h-[700px]"
           style={{
             backgroundImage:
               "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",

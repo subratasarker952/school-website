@@ -1,39 +1,69 @@
 const Faculty = () => {
+  const facultyData = [
+    {
+      name: "John Doe",
+      position: "Principal",
+      qualifications: "M.Ed",
+      experience: "20 years of experience in educational administration",
+    },
+    {
+      name: "Jane Smith",
+      position: "Vice Principal",
+      qualifications: "M.Sc. in Physics",
+      experience: "15 years of teaching experience",
+    },
+    {
+      name: "Emily Johnson",
+      position: "English Teacher",
+      qualifications: "M.A. in English",
+      experience: "10 years of teaching experience",
+    },
+    {
+      name: "Michael Brown",
+      position: "Mathematics Teacher",
+      qualifications: "M.Sc. in Mathematics",
+      experience: "8 years of teaching experience",
+    },
+    {
+      name: "Sophia Davis",
+      position: "Science Teacher",
+      qualifications: "M.Sc. in Chemistry",
+      experience: "12 years of teaching experience",
+    },
+    {
+      name: "David Wilson",
+      position: "Computer Science Teacher",
+      qualifications: "B.Tech in Computer Science",
+      experience: "5 years of teaching experience",
+    },
+  ];
   return (
-    <>
-      <h1 className="text-4xl text-center underline my-10">Faculty</h1>
-      <div className="max-w-5xl mx-auto text-2xl flex flex-col gap-3">
-        <div className="">
-          <span className="font-bold">Profiles:- </span>
-          <div className="flex flex-col gap-3">
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span> <span className='font-bold'>John Doe:</span> Principal, M.Ed, 20 years of
-              experience in educational administration.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span> <span className='font-bold'>Jane Smith:</span> Vice Principal, M.Sc. in
-              Physics, 15 years of teaching experience.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span> <span className='font-bold'> Emily Johnson:</span> English Teacher, M.A.
-              in English, 10 years of teaching experience.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span> <span className='font-bold'>Michael Brown:</span> Mathematics Teacher,
-              M.Sc. in Mathematics, 8 years of teaching experience.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span> <span className='font-bold'>Sophia Davis:</span> Science Teacher, M.Sc.
-              in Chemistry, 12 years of teaching experience. David
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span> <span className='font-bold'>Wilson:</span> Computer Science Teacher,
-              B.Tech in Computer Science, 5 years of teaching experience.
-            </p>
-          </div>
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">Faculty</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {facultyData.map((faculty, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold mb-2">{faculty.name}</h3>
+              <p className="text-gray-700 mb-1">
+                <span className="font-semibold">Position:</span>{" "}
+                {faculty.position}
+              </p>
+              <p className="text-gray-700 mb-1">
+                <span className="font-semibold">Qualifications:</span>{" "}
+                {faculty.qualifications}
+              </p>
+              <p className="text-gray-700">
+                <span className="font-semibold">Experience:</span>{" "}
+                {faculty.experience}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
+
 export default Faculty;

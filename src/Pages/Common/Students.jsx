@@ -1,66 +1,89 @@
 const Students = () => {
+  const studentsData = {
+    extracurriculars: [
+      { name: "Music", description: "Various music clubs and bands" },
+      { name: "Dance", description: "Dance clubs and teams" },
+      { name: "Drama", description: "Drama and theater groups" },
+      { name: "Art", description: "Art clubs and exhibitions" },
+      { name: "Sports", description: "Teams and sports activities" },
+      { name: "Robotics", description: "Robotics club and competitions" },
+      { name: "Debate Club", description: "Debate teams and events" },
+      { name: "Science Club", description: "Science experiments and fairs" },
+    ],
+    achievements: [
+      {
+        name: "John Smith",
+        achievement: "National Level Math Olympiad Winner",
+      },
+      {
+        name: "Sarah Lee",
+        achievement: "Gold Medalist in State Swimming Championship",
+      },
+      {
+        name: "Tech Innovators Club",
+        achievement: "Winners of Inter-School Robotics Competition",
+      },
+    ],
+    studentCouncil: [
+      { position: "President", name: "Amy Parker", grade: 12 },
+      { position: "Vice President", name: "Rajiv Mehta", grade: 11 },
+      { position: "Secretary", name: "Lisa Wong", grade: 10 },
+    ],
+  };
   return (
-    <>
-      <h1 className="text-4xl text-center underline my-10">Students</h1>
-      <div className="max-w-5xl mx-auto text-2xl flex flex-col gap-3">
-        <div className="">
-          <span className="font-bold">Life at Springdale:- </span>
-          <div className="flex flex-col gap-3">
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">Extracurricular Activities:</span>
-              Music, Dance, Drama, Art, Sports, Robotics, Debate Club, Science
-              Club.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">Clubs and Societies:</span> Literary
-              Society, Environmental Club, Astronomy Club, Coding Club.
-            </p>
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl text-center font-bold mb-8">Students</h2>
+
+        <section className="mb-12">
+          <h3 className="text-2xl  text-center font-semibold mb-4">
+            Extracurricular Activities
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {studentsData.extracurriculars.map((activity, index) => (
+              <div key={index} className=" text-center  bg-white p-6 rounded-lg shadow-lg">
+                <h4 className="text-xl font-semibold mb-2">{activity.name}</h4>
+                <p>{activity.description}</p>
+              </div>
+            ))}
           </div>
-        </div>
-        <div className="">
-          <span className="font-bold">Achievements:- </span>
-          <div className="flex flex-col gap-3">
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">John Smith -</span> National Level
-              Math Olympiad Winner.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">Sarah Lee -</span> Gold Medalist in
-              State Swimming Championship
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">Tech Innovators Club -</span> Winners
-              of Inter-School Robotics Competition
-            </p>
+        </section>
+
+        <section className="mb-12">
+          <h3 className="text-2xl text-center font-semibold mb-4">
+            Achievements
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {studentsData.achievements.map((achievement, index) => (
+              <div key={index} className=" text-center  bg-white p-6 rounded-lg shadow-lg">
+                <h4 className="text-xl font-semibold mb-2">
+                  {achievement.name}
+                </h4>
+                <p>{achievement.achievement}</p>
+              </div>
+            ))}
           </div>
-        </div>
-        <div className="">
-          <span className="font-bold">Student Council:- </span>
-          <div className="flex flex-col gap-3">
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">President:</span> Amy Parker, Grade
-              12.
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold">Vice President: </span> Rajiv Mehta,
-              Grade 11
-            </p>
-            <p className="ml-10">
-              <span className="text-sm font-bold">o</span>
-              <span className="font-bold"> Secretary: </span> Lisa Wong, Grade
-              10..
-            </p>
+        </section>
+
+        <section className="mb-12">
+          <h3 className="text-2xl  text-center font-semibold mb-4">
+            Student Council
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {studentsData.studentCouncil.map((member, index) => (
+              <div key={index} className=" text-center  bg-white p-6 rounded-lg shadow-lg">
+                <h4 className="text-xl font-semibold mb-2">
+                  {member.position}
+                </h4>
+                <p>
+                  {member.name}, Grade {member.grade}
+                </p>
+              </div>
+            ))}
           </div>
-        </div>
+        </section>
       </div>
-    </>
+    </div>
   );
 };
 
